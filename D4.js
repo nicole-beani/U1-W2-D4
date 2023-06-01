@@ -1,25 +1,35 @@
-/*
-REGOLE
-- Tutte le risposte devono essere scritte in JavaScript
-- Se sei in difficoltà puoi chiedere aiuto a un Teaching Assistant
-- Puoi usare Google / StackOverflow ma solo quanto ritieni di aver bisogno di qualcosa che non è stato spiegato a lezione
-- Puoi testare il tuo codice in un file separato, o de-commentando un esercizio alla volta
-- Per farlo puoi utilizzare il terminale Bash, quello di VSCode o quello del tuo sistema operativo (se utilizzi macOS o Linux)
-*/
-
 /* ESERCIZIO 1
  Scrivi una funzione di nome "area", che riceve due parametri (l1, l2) e calcola l'area del rettangolo associato..
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+function area(){
+    let area = 11*12
+    console.log(area)
+}
+area()
 /* ESERCIZIO 2
- Scrivi una funzione di nome "crazySum", che riceve due numeri interi come parametri.
- La funzione deve ritornare la somma dei due parametri, ma se il valore dei due parametri è il medesimo deve invece tornare
- la loro somma moltiplicata per tre.
+Scrivi una funzione di nome "crazySum", che riceve due numeri interi come parametri.
+La funzione deve ritornare la somma dei due parametri, ma se il valore dei due parametri è il medesimo deve invece tornare
+la loro somma moltiplicata per tre.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function crazySum(x,y){
+    x = Math.floor(x)
+    y = Math.floor(y)
+    let result= 0
+    
+    if ( x === y) {
+       result=(x+y) * 3
+    }
+    else{
+result = (x+y)
+    }
+   
+console.log("risultato", result)
+return result
+}
 
 /* ESERCIZIO 3
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
@@ -27,13 +37,36 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+function crazyDiff (x,y){
+X-Math. floor (x)
+y=Math. floor (y)
+let result = (x-y)
+if (x <= y) {
+result-(x-y)
+}
+else {
+result= (x-y) * 3
+}
+console. log("Differenza", result)
+return result
+}
+crazySum(5,10)
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
  se n è uguale a 400.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function boundary(n){
+    if (n >= 20 && n<=100)
+    {
+        console.log("true")
+    }
+   else{
+    console.log("false")
+}
+}
+boundary(77)
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
@@ -49,17 +82,36 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+const check3and7 = function (n){
+    let result
+    if (n<0){
+        result= console.log("numero positivo non è inserito")
+    }
+    else if (n%3 === 0|| n%7===0){
+       result= console.log("numero non è multiplo di 3 o 7")
+    }
+    else console.log("numero non è multiplo di 3 o 7")
+    return result
+}
+ check3and7(5)
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+function reversestring (string) {
+    let newstring = ""
+    for (let i = string. length -1; 1 >= 0; i-- ) {
+    newstring = newstring + string. charAt (i)
+    }
+    console.log("reverse string", newstring)
+}
+reversestring ("epicode")
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
+
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -70,8 +122,24 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let cutString = 'Hello';
+let n = 1 ;
+
+cutString = cutString.substring(n);
+console.log(cutString);
+
+
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const giveMeRandom = function (n){
+    let randomNumber = []
+    for (let i = 0; i < n; i++ ){
+        randomNumber [i] = math.floor(math.random() *11)
+    }
+    console.log("numeri ad muzzum", randomNumber)
+}
+
+giveMeRandom (9)
